@@ -1,2 +1,1 @@
-
-            ans[1] = '\n';
+np/((nkp*kp)*(nkp*kp))

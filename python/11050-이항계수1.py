@@ -1,7 +1,7 @@
 n, k = map(int, input().split())
 ars = []
 for i in range(n+1):
-    ars.append([-1]*(n+1))
+    ars.append([-1]*(i+1))
 ars[0][0] = 1
 ars[1][0] = 1
 ars[1][1] = 1
