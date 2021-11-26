@@ -1,5 +1,9 @@
 #include <stdio.h>
 
 int main(){
-  printf("%lld", (long long)1000000000*1000000000);
+  int a = 5;
+  for(int i=0;i < a; i++){
+    a = 3;
+    printf("%d ", i);
+  }
 }
