@@ -1,3 +1,3 @@
 # Algorithm Practice on [baekjoon online judge](https://www.acmicpc.net/).
 
-> ## My id? wndgur2
+> ## Me > [wndgur2](https://www.acmicpc.net/user/wndgur2)
