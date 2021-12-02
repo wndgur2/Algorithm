@@ -110,11 +110,8 @@ int split(int *xS, int st, int end, int *yS){
     }
   }
 
-  int compareEnd;
   for(i=0; i<idx/2-1; i++){// idx/2는 newyS에 존재하는 점의 개수를 의미함. 개수가 6개보다 적을 때는 모두 비교함.
-    if(idx/2<i+6) compareEnd = idx/2;
-    else compareEnd = i+6;
-    for(j=i+1; j<compareEnd; j++){
+    for(j=i+1; j<idx/2; j++){
       tempd = getDistance(newyS[i*2], newyS[i*2+1], newyS[j*2], newyS[j*2+1]);
       if(tempd<d)
         d = tempd;
