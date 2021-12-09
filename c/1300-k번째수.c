@@ -4,7 +4,7 @@ typedef long long ll;
 ll countDown(ll r, int n);
 
 int main(){
-  int n, k;
+  int n, k, i;
 
   scanf("%d", &n);
   scanf("%d", &k);
@@ -12,7 +12,8 @@ int main(){
 
   while (end-start > 1){
     mid = (start + end) / 2;
-    size = countDown(mid, n);
+    size = 0;
+    for(i=1; i<=n; i++) size += n<(mid/i)?n:(mid/i);
     if(size >= k){
       end = mid;
     } else if(size < k){
