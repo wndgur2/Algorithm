@@ -1,9 +1,6 @@
 #include <stdio.h>
 
 int main(){
-  int a = 5;
-  for(int i=0;i < a; i++){
-    a = 3;
-    printf("%d ", i);
-  }
+  long long a=10000000000;
+  printf("%lld\n", a/3);
 }
