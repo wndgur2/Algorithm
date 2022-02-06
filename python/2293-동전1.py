@@ -1,9 +1,17 @@
 import sys
-sys.setrecursionlimit(10000)
-n, k = map(int, input().split())
-coins = []
-for _ in range(n):
-  coins.append(int(sys.stdin.readline()))
 
-# 3원을 만드는 경우의 수 = 1원을 만드는 경우의 수 + 2원을 만드는 경우의 수
-# ///
+n, k = map(int, input().split())
+c = []
+dp = [0 for _ in range(k+1)]
+for i in range(n):
+  inp = int(sys.stdin.readline())
+  if(inp <= k):
+    c.append(inp)
+if(len(c)):
+  for i in c:
+    dp[i] += 1
+    for j in range(i, k+1):
+      dp[j] += dp[j-i]
+  print(dp[k])
+else:
+  print(0)
