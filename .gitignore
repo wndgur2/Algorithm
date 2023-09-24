@@ -1,0 +1,7 @@
+.DS_Store
+settings.json
+.gitconfig
+.vscode
+*/a.out
+*/*/a.out
+*/*/*/a.out
